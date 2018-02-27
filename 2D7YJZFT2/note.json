@@ -1,0 +1,285 @@
+{
+  "paragraphs": [
+    {
+      "text": "1+1",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:55:32 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res0: Int \u003d 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736546135_757867085",
+      "id": "20180227-130226_2501296",
+      "dateCreated": "Feb 27, 2018 1:02:26 PM",
+      "dateStarted": "Feb 27, 2018 1:55:33 PM",
+      "dateFinished": "Feb 27, 2018 1:56:00 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "sc.version",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:52:07 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res1: String \u003d 2.2.1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736550823_-2102756311",
+      "id": "20180227-130230_577762710",
+      "dateCreated": "Feb 27, 2018 1:02:30 PM",
+      "dateStarted": "Feb 27, 2018 1:52:08 PM",
+      "dateFinished": "Feb 27, 2018 1:52:32 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\n1+1",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:19:00 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736593124_-786317430",
+      "id": "20180227-130313_924556768",
+      "dateCreated": "Feb 27, 2018 1:03:13 PM",
+      "dateStarted": "Feb 27, 2018 1:19:00 PM",
+      "dateFinished": "Feb 27, 2018 1:19:00 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nsc.version",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:05:15 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u00272.2.1\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736706738_73581038",
+      "id": "20180227-130506_1464220499",
+      "dateCreated": "Feb 27, 2018 1:05:06 PM",
+      "dateStarted": "Feb 27, 2018 1:05:15 PM",
+      "dateFinished": "Feb 27, 2018 1:05:15 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nimport pandas as pd",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:05:24 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736715296_-1755515233",
+      "id": "20180227-130515_2091483887",
+      "dateCreated": "Feb 27, 2018 1:05:15 PM",
+      "dateStarted": "Feb 27, 2018 1:05:24 PM",
+      "dateFinished": "Feb 27, 2018 1:05:25 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val data \u003d sc.textFile(\"file:///home/root/dataset/bank.csv\")\ndata.count()\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:56:52 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "data: org.apache.spark.rdd.RDD[String] \u003d file:///home/root/dataset/bank.csv MapPartitionsRDD[1] at textFile at \u003cconsole\u003e:27\nres1: Long \u003d 4522\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736798643_-1373704762",
+      "id": "20180227-130638_1663914813",
+      "dateCreated": "Feb 27, 2018 1:06:38 PM",
+      "dateStarted": "Feb 27, 2018 1:56:52 PM",
+      "dateFinished": "Feb 27, 2018 1:56:58 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "data.take(10)",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:38:00 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res1: Array[String] \u003d Array(\"age\";\"job\";\"marital\";\"education\";\"default\";\"balance\";\"housing\";\"loan\";\"contact\";\"day\";\"month\";\"duration\";\"campaign\";\"pdays\";\"previous\";\"poutcome\";\"y\", 30;\"unemployed\";\"married\";\"primary\";\"no\";1787;\"no\";\"no\";\"cellular\";19;\"oct\";79;1;-1;0;\"unknown\";\"no\", 33;\"services\";\"married\";\"secondary\";\"no\";4789;\"yes\";\"yes\";\"cellular\";11;\"may\";220;1;339;4;\"failure\";\"no\", 35;\"management\";\"single\";\"tertiary\";\"no\";1350;\"yes\";\"no\";\"cellular\";16;\"apr\";185;1;330;1;\"failure\";\"no\", 30;\"management\";\"married\";\"tertiary\";\"no\";1476;\"yes\";\"yes\";\"unknown\";3;\"jun\";199;4;-1;0;\"unknown\";\"no\", 59;\"blue-collar\";\"married\";\"secondary\";\"no\";0;\"yes\";\"no\";\"unknown\";5;\"may\";226;1;-1;0;\"unknown\";\"no\", 35;\"management\";\"single\";\"tertiary\";\"no\";747;\"no\";\"no\";\"cellular\";23;\"feb\";141;2;176;3;\"failure\";\"..."
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519736972213_-1367902357",
+      "id": "20180227-130932_608248357",
+      "dateCreated": "Feb 27, 2018 1:09:32 PM",
+      "dateStarted": "Feb 27, 2018 1:38:00 PM",
+      "dateFinished": "Feb 27, 2018 1:38:05 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "Feb 27, 2018 1:11:07 PM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1519737067619_-1513582628",
+      "id": "20180227-131107_2055783002",
+      "dateCreated": "Feb 27, 2018 1:11:07 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "HelloWorld",
+  "id": "2D7YJZFT2",
+  "angularObjects": {
+    "2D8PFZPMZ:shared_process": [],
+    "2D8GJT9U9:shared_process": [],
+    "2D9BA4Z5V:shared_process": [],
+    "2D7WPMFYF:shared_process": [],
+    "2D88VVZS7:shared_process": [],
+    "2D6HNBSRQ:shared_process": [],
+    "2D9S7BAMP:shared_process": [],
+    "2D9NG6FM4:shared_process": [],
+    "2DAAE7QJY:shared_process": [],
+    "2D7S4ZWWA:shared_process": [],
+    "2D9FFRPC3:shared_process": [],
+    "2D9YU4BGC:shared_process": [],
+    "2D9QB4ZY8:shared_process": [],
+    "2D8M81WQ3:shared_process": [],
+    "2D8VF9751:shared_process": [],
+    "2DA9VNMVY:shared_process": [],
+    "2D6Q3UFU1:shared_process": [],
+    "2D8K662CJ:shared_process": [],
+    "2D6Z6548N:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
