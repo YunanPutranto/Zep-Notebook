@@ -1,0 +1,979 @@
+{
+  "paragraphs": [
+    {
+      "text": "1+1",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:42:10 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res0: Int \u003d 2\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789321921_-641510923",
+      "id": "20180228-034201_654234523",
+      "dateCreated": "Feb 28, 2018 3:42:01 AM",
+      "dateStarted": "Feb 28, 2018 3:42:10 AM",
+      "dateFinished": "Feb 28, 2018 3:42:25 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "sc.version",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:42:16 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res1: String \u003d 2.2.1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789330882_1980183406",
+      "id": "20180228-034210_240639246",
+      "dateCreated": "Feb 28, 2018 3:42:10 AM",
+      "dateStarted": "Feb 28, 2018 3:42:16 AM",
+      "dateFinished": "Feb 28, 2018 3:42:25 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## Import",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:44:25 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eImport\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789456685_78555128",
+      "id": "20180228-034416_1731803569",
+      "dateCreated": "Feb 28, 2018 3:44:16 AM",
+      "dateStarted": "Feb 28, 2018 3:44:25 AM",
+      "dateFinished": "Feb 28, 2018 3:44:25 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import org.apache.spark.sql.SQLContext\n\n//Data Preparation\nimport org.apache.spark.ml.feature.VectorAssembler\n\n//Model\nimport org.apache.spark.ml.regression.LinearRegression\nimport scala.util.Random\n\n//Evaluation\nimport org.apache.spark.mllib.evaluation.RegressionMetrics\nimport org.apache.spark.mllib.linalg.Vector\nimport org.apache.spark.mllib.regression.{LabeledPoint, LinearRegressionWithSGD}\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:21:47 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.sql.SQLContext\nimport org.apache.spark.ml.feature.VectorAssembler\nimport org.apache.spark.ml.regression.LinearRegression\nimport scala.util.Random\nimport org.apache.spark.mllib.evaluation.RegressionMetrics\nimport org.apache.spark.mllib.linalg.Vector\nimport org.apache.spark.mllib.regression.{LabeledPoint, LinearRegressionWithSGD}\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789468307_960430255",
+      "id": "20180228-034428_1288448148",
+      "dateCreated": "Feb 28, 2018 3:44:28 AM",
+      "dateStarted": "Feb 28, 2018 4:21:47 AM",
+      "dateFinished": "Feb 28, 2018 4:21:48 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## CONTEXT",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:45:43 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eCONTEXT\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789521312_-28112263",
+      "id": "20180228-034521_1206304650",
+      "dateCreated": "Feb 28, 2018 3:45:21 AM",
+      "dateStarted": "Feb 28, 2018 3:45:43 AM",
+      "dateFinished": "Feb 28, 2018 3:45:43 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val sqlContext \u003d new SQLContext(sc)\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:45:48 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "warning: there was one deprecation warning; re-run with -deprecation for details\nsqlContext: org.apache.spark.sql.SQLContext \u003d org.apache.spark.sql.SQLContext@72a3dc70\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789545361_1074775655",
+      "id": "20180228-034545_1482745571",
+      "dateCreated": "Feb 28, 2018 3:45:45 AM",
+      "dateStarted": "Feb 28, 2018 3:45:48 AM",
+      "dateFinished": "Feb 28, 2018 3:45:48 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## LOAD DATA",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:43:11 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eLOAD DATA\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789336893_-1996196476",
+      "id": "20180228-034216_914871823",
+      "dateCreated": "Feb 28, 2018 3:42:16 AM",
+      "dateStarted": "Feb 28, 2018 3:43:11 AM",
+      "dateFinished": "Feb 28, 2018 3:43:11 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val csvFile \u003d sqlContext.read\n                .option(\"header\", \"true\")\n                .option(\"inferSchema\", \"true\")\n                .csv(\"/home/root/dataset/bike/train.csv\")\n                \ncsvFile.registerTempTable(\"bike\")\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:54:37 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "csvFile: org.apache.spark.sql.DataFrame \u003d [datetime: timestamp, season: int ... 10 more fields]\nwarning: there was one deprecation warning; re-run with -deprecation for details\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789445121_-1540098819",
+      "id": "20180228-034405_2038236301",
+      "dateCreated": "Feb 28, 2018 3:44:05 AM",
+      "dateStarted": "Feb 28, 2018 3:54:29 AM",
+      "dateFinished": "Feb 28, 2018 3:54:30 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "csvFile.show()",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:54:38 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "+-------------------+------+-------+----------+-------+-----+------+--------+---------+------+----------+-----+\n|           datetime|season|holiday|workingday|weather| temp| atemp|humidity|windspeed|casual|registered|count|\n+-------------------+------+-------+----------+-------+-----+------+--------+---------+------+----------+-----+\n|2011-01-01 00:00:00|     1|      0|         0|      1| 9.84|14.395|      81|      0.0|     3|        13|   16|\n|2011-01-01 01:00:00|     1|      0|         0|      1| 9.02|13.635|      80|      0.0|     8|        32|   40|\n|2011-01-01 02:00:00|     1|      0|         0|      1| 9.02|13.635|      80|      0.0|     5|        27|   32|\n|2011-01-01 03:00:00|     1|      0|         0|      1| 9.84|14.395|      75|      0.0|     3|        10|   13|\n|2011-01-01 04:00:00|     1|      0|         0|      1| 9.84|14.395|      75|      0.0|     0|         1|    1|\n|2011-01-01 05:00:00|     1|      0|         0|      2| 9.84| 12.88|      75|   6.0032|     0|         1|    1|\n|2011-01-01 06:00:00|     1|      0|         0|      1| 9.02|13.635|      80|      0.0|     2|         0|    2|\n|2011-01-01 07:00:00|     1|      0|         0|      1|  8.2| 12.88|      86|      0.0|     1|         2|    3|\n|2011-01-01 08:00:00|     1|      0|         0|      1| 9.84|14.395|      75|      0.0|     1|         7|    8|\n|2011-01-01 09:00:00|     1|      0|         0|      1|13.12|17.425|      76|      0.0|     8|         6|   14|\n|2011-01-01 10:00:00|     1|      0|         0|      1|15.58|19.695|      76|  16.9979|    12|        24|   36|\n|2011-01-01 11:00:00|     1|      0|         0|      1|14.76|16.665|      81|  19.0012|    26|        30|   56|\n|2011-01-01 12:00:00|     1|      0|         0|      1|17.22| 21.21|      77|  19.0012|    29|        55|   84|\n|2011-01-01 13:00:00|     1|      0|         0|      2|18.86|22.725|      72|  19.9995|    47|        47|   94|\n|2011-01-01 14:00:00|     1|      0|         0|      2|18.86|22.725|      72|  19.0012|    35|        71|  106|\n|2011-01-01 15:00:00|     1|      0|         0|      2|18.04| 21.97|      77|  19.9995|    40|        70|  110|\n|2011-01-01 16:00:00|     1|      0|         0|      2|17.22| 21.21|      82|  19.9995|    41|        52|   93|\n|2011-01-01 17:00:00|     1|      0|         0|      2|18.04| 21.97|      82|  19.0012|    15|        52|   67|\n|2011-01-01 18:00:00|     1|      0|         0|      3|17.22| 21.21|      88|  16.9979|     9|        26|   35|\n|2011-01-01 19:00:00|     1|      0|         0|      3|17.22| 21.21|      88|  16.9979|     6|        31|   37|\n+-------------------+------+-------+----------+-------+-----+------+--------+---------+------+----------+-----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789620661_-1660880970",
+      "id": "20180228-034700_1889187449",
+      "dateCreated": "Feb 28, 2018 3:47:00 AM",
+      "dateStarted": "Feb 28, 2018 3:54:38 AM",
+      "dateFinished": "Feb 28, 2018 3:54:38 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sql\nSELECT * FROM bike LIMIT 10",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:54:41 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "sql"
+        },
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TABLE",
+            "data": "datetime\tseason\tholiday\tworkingday\tweather\ttemp\tatemp\thumidity\twindspeed\tcasual\tregistered\tcount\n2011-01-01 00:00:00.0\t1\t0\t0\t1\t9.84\t14.395\t81\t0.0\t3\t13\t16\n2011-01-01 01:00:00.0\t1\t0\t0\t1\t9.02\t13.635\t80\t0.0\t8\t32\t40\n2011-01-01 02:00:00.0\t1\t0\t0\t1\t9.02\t13.635\t80\t0.0\t5\t27\t32\n2011-01-01 03:00:00.0\t1\t0\t0\t1\t9.84\t14.395\t75\t0.0\t3\t10\t13\n2011-01-01 04:00:00.0\t1\t0\t0\t1\t9.84\t14.395\t75\t0.0\t0\t1\t1\n2011-01-01 05:00:00.0\t1\t0\t0\t2\t9.84\t12.88\t75\t6.0032\t0\t1\t1\n2011-01-01 06:00:00.0\t1\t0\t0\t1\t9.02\t13.635\t80\t0.0\t2\t0\t2\n2011-01-01 07:00:00.0\t1\t0\t0\t1\t8.2\t12.88\t86\t0.0\t1\t2\t3\n2011-01-01 08:00:00.0\t1\t0\t0\t1\t9.84\t14.395\t75\t0.0\t1\t7\t8\n2011-01-01 09:00:00.0\t1\t0\t0\t1\t13.12\t17.425\t76\t0.0\t8\t6\t14\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789688815_628313689",
+      "id": "20180228-034808_1061516439",
+      "dateCreated": "Feb 28, 2018 3:48:08 AM",
+      "dateStarted": "Feb 28, 2018 3:54:41 AM",
+      "dateFinished": "Feb 28, 2018 3:54:41 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "csvFile.printSchema()\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:55:31 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "root\n |-- datetime: timestamp (nullable \u003d true)\n |-- season: integer (nullable \u003d true)\n |-- holiday: integer (nullable \u003d true)\n |-- workingday: integer (nullable \u003d true)\n |-- weather: integer (nullable \u003d true)\n |-- temp: double (nullable \u003d true)\n |-- atemp: double (nullable \u003d true)\n |-- humidity: integer (nullable \u003d true)\n |-- windspeed: double (nullable \u003d true)\n |-- casual: integer (nullable \u003d true)\n |-- registered: integer (nullable \u003d true)\n |-- count: integer (nullable \u003d true)\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519790116232_-1112125058",
+      "id": "20180228-035516_63779453",
+      "dateCreated": "Feb 28, 2018 3:55:16 AM",
+      "dateStarted": "Feb 28, 2018 3:55:31 AM",
+      "dateFinished": "Feb 28, 2018 3:55:31 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md \n## DATA PREPARATION\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:43:24 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eDATA PREPARATION\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789361395_254831421",
+      "id": "20180228-034241_1137526581",
+      "dateCreated": "Feb 28, 2018 3:42:41 AM",
+      "dateStarted": "Feb 28, 2018 3:43:24 AM",
+      "dateFinished": "Feb 28, 2018 3:43:24 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n#### Create Features Dataset",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:50:20 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch4\u003eCreate Features Dataset\u003c/h4\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789794990_1420481026",
+      "id": "20180228-034954_1440681285",
+      "dateCreated": "Feb 28, 2018 3:49:54 AM",
+      "dateStarted": "Feb 28, 2018 3:50:20 AM",
+      "dateFinished": "Feb 28, 2018 3:50:20 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val colNames \u003d Seq(\n    \"temp\",\n    \"atemp\",\n    \"humidity\",\n    \"windspeed\",\n    \"casual\",\n    \"registered\",\n    \"count\"\n    )\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:57:17 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "tableHide": false,
+        "lineNumbers": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "colNames: Seq[String] \u003d List(temp, atemp, humidity, windspeed, casual, registered, count)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789824941_-1850487201",
+      "id": "20180228-035024_1607895386",
+      "dateCreated": "Feb 28, 2018 3:50:24 AM",
+      "dateStarted": "Feb 28, 2018 3:56:59 AM",
+      "dateFinished": "Feb 28, 2018 3:57:00 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val dataFinal \u003d csvFile.select(colNames.map(c \u003d\u003e col(c)): _*)\ndataFinal.show()",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:00:10 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "dataFinal: org.apache.spark.sql.DataFrame \u003d [temp: double, atemp: double ... 5 more fields]\n+-----+------+--------+---------+------+----------+-----+\n| temp| atemp|humidity|windspeed|casual|registered|count|\n+-----+------+--------+---------+------+----------+-----+\n| 9.84|14.395|      81|      0.0|     3|        13|   16|\n| 9.02|13.635|      80|      0.0|     8|        32|   40|\n| 9.02|13.635|      80|      0.0|     5|        27|   32|\n| 9.84|14.395|      75|      0.0|     3|        10|   13|\n| 9.84|14.395|      75|      0.0|     0|         1|    1|\n| 9.84| 12.88|      75|   6.0032|     0|         1|    1|\n| 9.02|13.635|      80|      0.0|     2|         0|    2|\n|  8.2| 12.88|      86|      0.0|     1|         2|    3|\n| 9.84|14.395|      75|      0.0|     1|         7|    8|\n|13.12|17.425|      76|      0.0|     8|         6|   14|\n|15.58|19.695|      76|  16.9979|    12|        24|   36|\n|14.76|16.665|      81|  19.0012|    26|        30|   56|\n|17.22| 21.21|      77|  19.0012|    29|        55|   84|\n|18.86|22.725|      72|  19.9995|    47|        47|   94|\n|18.86|22.725|      72|  19.0012|    35|        71|  106|\n|18.04| 21.97|      77|  19.9995|    40|        70|  110|\n|17.22| 21.21|      82|  19.9995|    41|        52|   93|\n|18.04| 21.97|      82|  19.0012|    15|        52|   67|\n|17.22| 21.21|      88|  16.9979|     9|        26|   35|\n|17.22| 21.21|      88|  16.9979|     6|        31|   37|\n+-----+------+--------+---------+------+----------+-----+\nonly showing top 20 rows\n\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519790241964_-1507461393",
+      "id": "20180228-035721_1486892848",
+      "dateCreated": "Feb 28, 2018 3:57:21 AM",
+      "dateStarted": "Feb 28, 2018 4:00:10 AM",
+      "dateFinished": "Feb 28, 2018 4:00:11 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n## TRAIN TEST\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:43:33 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eTRAIN TEST\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789404217_-1860087311",
+      "id": "20180228-034324_979888296",
+      "dateCreated": "Feb 28, 2018 3:43:24 AM",
+      "dateStarted": "Feb 28, 2018 3:43:33 AM",
+      "dateFinished": "Feb 28, 2018 3:43:33 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// 90 - 10 Split\r\n\r\nval Array(trainData, testData) \u003d dataFinal.randomSplit(\r\n    Array(0.9,0.1)\r\n)\r\n\r\ntrainData.cache()\r\ntestData.cache()",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:00:59 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "trainData: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] \u003d [temp: double, atemp: double ... 5 more fields]\ntestData: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] \u003d [temp: double, atemp: double ... 5 more fields]\nres16: trainData.type \u003d [temp: double, atemp: double ... 5 more fields]\nres17: testData.type \u003d [temp: double, atemp: double ... 5 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519790422201_-1588786785",
+      "id": "20180228-040022_199893228",
+      "dateCreated": "Feb 28, 2018 4:00:22 AM",
+      "dateStarted": "Feb 28, 2018 4:00:53 AM",
+      "dateFinished": "Feb 28, 2018 4:00:56 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val inputCols \u003d trainData.columns\r\n//.filter(_ !\u003d \"count\")\r\n\r\nval assembler \u003d new VectorAssembler().\r\n    setInputCols(inputCols).\r\n    setOutputCol(\"featureVector\")\r\n    \r\nval assembledTrainData \u003d assembler.transform(trainData)",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:18:37 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "inputCols: Array[String] \u003d Array(temp, atemp, humidity, windspeed, casual, registered, count)\nassembler: org.apache.spark.ml.feature.VectorAssembler \u003d vecAssembler_f6753f81c88d\nassembledTrainData: org.apache.spark.sql.DataFrame \u003d [temp: double, atemp: double ... 6 more fields]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519790466748_1204013535",
+      "id": "20180228-040106_243722188",
+      "dateCreated": "Feb 28, 2018 4:01:06 AM",
+      "dateStarted": "Feb 28, 2018 4:18:37 AM",
+      "dateFinished": "Feb 28, 2018 4:18:38 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:15:27 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1519790531412_1083110436",
+      "id": "20180228-040211_1788474625",
+      "dateCreated": "Feb 28, 2018 4:02:11 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## MODEL\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:43:38 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eMODEL\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789413415_2070354211",
+      "id": "20180228-034333_95120358",
+      "dateCreated": "Feb 28, 2018 3:43:33 AM",
+      "dateStarted": "Feb 28, 2018 3:43:38 AM",
+      "dateFinished": "Feb 28, 2018 3:43:38 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val lr \u003d new LinearRegression()\r\n  .setMaxIter(10)\r\n  .setRegParam(0.3)\r\n  .setElasticNetParam(0.8)\r\n  .setLabelCol(\"count\")\r\n  .setFeaturesCol(\"featureVector\")",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:22:50 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "lr: org.apache.spark.ml.regression.LinearRegression \u003d linReg_e1e325f83920\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519791324794_1010311339",
+      "id": "20180228-041524_1019685203",
+      "dateCreated": "Feb 28, 2018 4:15:24 AM",
+      "dateStarted": "Feb 28, 2018 4:19:52 AM",
+      "dateFinished": "Feb 28, 2018 4:19:52 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Fit the model\r\nval lrModel \u003d lr.fit(assembledTrainData)",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:19:54 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "lrModel: org.apache.spark.ml.regression.LinearRegressionModel \u003d linReg_e1e325f83920\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519791546553_-1355985818",
+      "id": "20180228-041906_551874178",
+      "dateCreated": "Feb 28, 2018 4:19:06 AM",
+      "dateStarted": "Feb 28, 2018 4:19:54 AM",
+      "dateFinished": "Feb 28, 2018 4:19:59 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\n\n## Evaluate",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 3:43:46 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch2\u003eEvaluate\u003c/h2\u003e\n\u003c/div\u003e"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789418852_-1402004612",
+      "id": "20180228-034338_1363800502",
+      "dateCreated": "Feb 28, 2018 3:43:38 AM",
+      "dateStarted": "Feb 28, 2018 3:43:46 AM",
+      "dateFinished": "Feb 28, 2018 3:43:46 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Summarize the model over the training set and print out some metrics\nval trainingSummary \u003d lrModel.summary\nprintln(s\"numIterations: ${trainingSummary.totalIterations}\")\nprintln(s\"objectiveHistory: [${trainingSummary.objectiveHistory.mkString(\",\")}]\")\ntrainingSummary.residuals.show()\nprintln(s\"RMSE: ${trainingSummary.rootMeanSquaredError}\")\nprintln(s\"r2: ${trainingSummary.r2}\")\n",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:20:20 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "markdown",
+          "editOnDblClick": true
+        },
+        "editorMode": "ace/mode/markdown",
+        "editorHide": true,
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "trainingSummary: org.apache.spark.ml.regression.LinearRegressionTrainingSummary \u003d org.apache.spark.ml.regression.LinearRegressionTrainingSummary@4cae16e0\nnumIterations: 11\nobjectiveHistory: [0.5000000000000002,0.34100938125377667,0.020135320134030202,0.009062273156855484,0.0015819734989286841,0.0014947126395320584,0.0014791297985662405,0.0014767736540681929,0.0014760945297515146,0.0014759204948747219,0.0014758953489909803]\n+--------------------+\n|           residuals|\n+--------------------+\n|  -0.282008639886697|\n|  -0.282008639886697|\n|-0.28088359466543134|\n|-0.26738305201024737|\n| 0.08070841319795363|\n| -0.2797585494441659|\n|-0.06739155023004173|\n|-0.28088359466543134|\n|-0.19789679589680986|\n|  -0.275258368559105|\n|-0.16419192531687088|\n|-0.23475674059354645|\n|-0.25613259979759206|\n| -0.2778679787227136|\n|-0.25388250935506207|\n|  -0.282008639886697|\n|  -0.282008639886697|\n| -0.2628828711251856|\n| -0.2744928430589182|\n|-0.22003818060104408|\n+--------------------+\nonly showing top 20 rows\n\nRMSE: 0.27768542786671063\nr2: 0.9999976538630685\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519789426594_-1561660082",
+      "id": "20180228-034346_943387992",
+      "dateCreated": "Feb 28, 2018 3:43:46 AM",
+      "dateStarted": "Feb 28, 2018 4:20:20 AM",
+      "dateFinished": "Feb 28, 2018 4:20:21 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "// Get predictions\r\nval valuesAndPreds \u003d data.map{ point \u003d\u003e\r\n  val prediction \u003d lrModel.predict(assembledTrainData.featureVector)\r\n  (prediction, point.count)\r\n}",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:23:12 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "ERROR",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u003cconsole\u003e:56: error: not found: value data\n       val valuesAndPreds \u003d data.map{ point \u003d\u003e\n                            ^\n\u003cconsole\u003e:57: error: method predict in class LinearRegressionModel cannot be accessed in org.apache.spark.ml.regression.LinearRegressionModel\n Access to protected method predict not permitted because\n enclosing class $iw is not a subclass of\n class LinearRegressionModel in package regression where target is defined\n         val prediction \u003d lrModel.predict(assembledTrainData.featureVector)\n                                  ^\n\u003cconsole\u003e:57: error: value featureVector is not a member of org.apache.spark.sql.DataFrame\n         val prediction \u003d lrModel.predict(assembledTrainData.featureVector)\n                                                             ^\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519791620420_-735077714",
+      "id": "20180228-042020_740122958",
+      "dateCreated": "Feb 28, 2018 4:20:20 AM",
+      "dateStarted": "Feb 28, 2018 4:23:12 AM",
+      "dateFinished": "Feb 28, 2018 4:23:12 AM",
+      "status": "ERROR",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "10+10",
+      "user": "adi",
+      "dateUpdated": "Feb 28, 2018 4:26:00 AM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res46: Int \u003d 20\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519791792127_-719674078",
+      "id": "20180228-042312_138446042",
+      "dateCreated": "Feb 28, 2018 4:23:12 AM",
+      "dateStarted": "Feb 28, 2018 4:26:00 AM",
+      "dateFinished": "Feb 28, 2018 4:26:00 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "adi",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1519791960483_-438594487",
+      "id": "20180228-042600_402895375",
+      "dateCreated": "Feb 28, 2018 4:26:00 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Bike Sharing",
+  "id": "2D8QNENHF",
+  "angularObjects": {
+    "2D8PFZPMZ:shared_process": [],
+    "2D8GJT9U9:shared_process": [],
+    "2D9BA4Z5V:shared_process": [],
+    "2D7WPMFYF:shared_process": [],
+    "2D88VVZS7:shared_process": [],
+    "2D6HNBSRQ:shared_process": [],
+    "2D9S7BAMP:shared_process": [],
+    "2D9NG6FM4:shared_process": [],
+    "2DAAE7QJY:shared_process": [],
+    "2D7S4ZWWA:shared_process": [],
+    "2D9FFRPC3:shared_process": [],
+    "2D9YU4BGC:shared_process": [],
+    "2D9QB4ZY8:shared_process": [],
+    "2D8M81WQ3:shared_process": [],
+    "2D8VF9751:shared_process": [],
+    "2DA9VNMVY:shared_process": [],
+    "2D6Q3UFU1:shared_process": [],
+    "2D8K662CJ:shared_process": [],
+    "2D6Z6548N:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
