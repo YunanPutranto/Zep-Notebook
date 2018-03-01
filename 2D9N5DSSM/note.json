@@ -1,0 +1,78 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc.version",
+      "user": "adi",
+      "dateUpdated": "Feb 27, 2018 3:11:28 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res0: String \u003d 2.2.1\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1519744282956_1499477356",
+      "id": "20180227-151122_424661411",
+      "dateCreated": "Feb 27, 2018 3:11:22 PM",
+      "dateStarted": "Feb 27, 2018 3:11:28 PM",
+      "dateFinished": "Feb 27, 2018 3:11:54 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "adi",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1519744288437_447589188",
+      "id": "20180227-151128_1712676561",
+      "dateCreated": "Feb 27, 2018 3:11:28 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Adi Notebook",
+  "id": "2D9N5DSSM",
+  "angularObjects": {
+    "2D8PFZPMZ:shared_process": [],
+    "2D8GJT9U9:shared_process": [],
+    "2D9BA4Z5V:shared_process": [],
+    "2D7WPMFYF:shared_process": [],
+    "2D88VVZS7:shared_process": [],
+    "2D6HNBSRQ:shared_process": [],
+    "2D9S7BAMP:shared_process": [],
+    "2D9NG6FM4:shared_process": [],
+    "2DAAE7QJY:shared_process": [],
+    "2D7S4ZWWA:shared_process": [],
+    "2D9FFRPC3:shared_process": [],
+    "2D9YU4BGC:shared_process": [],
+    "2D9QB4ZY8:shared_process": [],
+    "2D8M81WQ3:shared_process": [],
+    "2D8VF9751:shared_process": [],
+    "2DA9VNMVY:shared_process": [],
+    "2D6Q3UFU1:shared_process": [],
+    "2D8K662CJ:shared_process": [],
+    "2D6Z6548N:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
